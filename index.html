@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCraft Roasters</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header class="header">
+        <nav class="header__nav">
+            
+            <a href="#" class="logo" aria-label="BrewCraft Roasters Home">
+                <img src="brewcraft-logo.png" alt="" class="logo__image">
+                <span class="logo__text logo__text--desktop">BrewCraft Roasters</span>
+                <span class="logo__text logo__text--mobile">BrewCraft</span>
+            </a>
+
+
+            <input type="checkbox" id="mobile-menu-checkbox" class="header__checkbox">
+
+            <ul class="header__menu">
+                <li><a href="#about" class="header__link">About</a></li>
+                <li><a href="#shop" class="header__link">Shop</a></li>
+                <li><a href="#subscribe" class="header__link">Subscribe</a></li>
+            </ul>
+
+            <label for="mobile-menu-checkbox" class="header__toggle" aria-label="Open navigation menu">
+                <span class="header__hamburger"></span>
+            </label>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1550259979-a76d9141f2f4?w=1920&q=80">
+                <source src="coffeeroast.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <div class="hero__accent-line"></div>
+                <h1 class="hero__title">Crafting the roast —<br>Brewing the moment</h1>
+                <p class="hero__subtitle">Hand-roasted. Ethically sourced. Crafted for flavor.</p>
+                <a class="button button--primary" href="#shop">Explore Our Roasts</a>
+            </div>
+        </section>
+
+        <section id="about" class="section section--about">
+            <div class="container">
+                <h2 class="section__title">Our Story</h2>
+                <p class="section__text">We partner with ethical farms across the globe to source the finest beans. Every batch is roasted with precision to bring out unique flavors and aromas that tell a story in every cup.</p>
+            </div>
+        </section>
+
+        <section id="shop" class="section section--products">
+            <div class="container">
+                <h2 class="section__title">Our Signature Roasts</h2>
+                <p class="section__text">From bright and fruity light roasts to deep, chocolatey dark profiles — there’s a perfect bean for every mood.</p>
+
+                <div class="grid">
+                    
+                    <article class="card">
+                        <img src="light-roast.png" alt="Bag of Ethiopian Sunrise Coffee" class="card__image">
+                        <div class="card__details">
+                            <h3 class="card__title">Ethiopian Sunrise</h3>
+                            <p class="card__desc">Bright • Floral • Citrus Notes • Light Roast</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="medium-roast.png" alt="Bag of Colombian Harmony Coffee" class="card__image">
+                        <div class="card__details">
+                            <h3 class="card__title">Colombian Harmony</h3>
+                            <p class="card__desc">Balanced • Nutty • Caramel • Medium Roast</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="dark-roast.png" alt="Bag of Sumatran Midnight Coffee" class="card__image">
+                        <div class="card__details">
+                            <h3 class="card__title">Sumatran Midnight</h3>
+                            <p class="card__desc">Bold • Earthy • Dark Chocolate • Dark Roast</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="section section--subscribe">
+            <div class="container">
+                <h2 class="section__title">Join Our Coffee Club</h2>
+                <p class="section__text">Get freshly roasted beans delivered weekly or monthly — plus exclusive blends and tasting notes.</p>
+
+                <form class="form">
+                    <label for="email" class="form__label">Email Address</label>
+                    <input type="email" id="email" class="form__input" placeholder="you@example.com" required>
+                    <button class="button button--primary" type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2025 BrewCraft Roasters • Hand-crafted coffee for true enthusiasts</p>
+        <p class="footer__credits">Website made by <span class="footer__highlight">Murgu Flavius//Panța Cristina//Zagan Emanuel//Vouciuc Claudiu</span></p>
+    </footer>
+
+</body>
+</html>
